@@ -1,0 +1,5 @@
+{
+"server": "some.irc.com",
+"nick": "yernick",
+"channels": ["#yerchannel"]
+}

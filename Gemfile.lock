@@ -1,0 +1,14 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    cinch (2.0.4)
+    extlib (0.9.16)
+    json (1.7.7)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  cinch (= 2.0.4)
+  extlib
+  json
