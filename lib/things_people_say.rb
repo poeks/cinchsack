@@ -30,7 +30,9 @@ class ThingsPeopleSay
       htmlz = self.conn.get $1
       if htmlz.body =~ /<article[^>]+>(.+?)\s+<nav>/m
         subbed= $1.gsub(/<[^>]+>/,"").gsub(/\n\n/m, "\n")
-      
+        subbed_sentences = subbed.split("\n")
+        subbed = subbed_sentences.join "\n"
+        
         begin
           self.coder.decode(subbed)
         rescue Encoding::UndefinedConversionError => e
