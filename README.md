@@ -10,6 +10,8 @@ Look at `./lib/eightball.rb` for a very simple example of how to create your own
 
 # To run #
 
+    cp bot.json.dist bot.json
+    vim bot.json # add your own config in this file
     bundle install
     bundle exec ruby bot.rb
     
